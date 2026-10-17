@@ -1,4 +1,4 @@
-# Dumana Giden Fırsatlar
+# Temiz Dünya / Dumana Giden Fırsatlar
 
 > **Gönüllülük Çalışması · Türkiye**  
 > Amaç sigara kullananları suçlamak değil; sigaraya ayrılan paranın fırsat maliyetini ve izmaritin çevresel izini birkaç dakikada anlaşılır kılmaktır.  
@@ -50,12 +50,25 @@ npm test
 ```bash
 npm run build
 ```
-Derleme çıktısı `dist/` klasörüne aktarılır ve GitHub Pages, Vercel, Netlify veya Cloudflare Pages üzerinde doğrudan statik olarak sunulabilir.
+Derleme çıktısı `dist/` klasörüne aktarılır.
 
-Önizleme için:
-```bash
-npm run preview
-```
+---
+
+## 🌐 Yayına Alma (Deployment) & Canva QR Kodu
+
+Bu proje saf statik bir ön yüz uygulaması olduğundan dilediğiniz platformda tek tıkla ücretsiz yayınlanabilir:
+
+### Seçenek A: Vercel / Netlify ile Yayınlama (Önerilen)
+1. Projeyi GitHub reponuza yükleyin.
+2. [vercel.com](https://vercel.com) veya [netlify.com](https://netlify.com) üzerinde `New Project` diyerek GitHub reponuzu seçin.
+3. Derleme komutu (`npm run build`) ve çıktı klasörü (`dist`) otomatik algılanır.
+4. `Deploy` butonuna tıkladığınızda projeniz birkaç saniye içinde canlıya alınır (Örn: `https://temiz-dunya.vercel.app`).
+5. Bu bağlantıyı Canva'da **Uygulamalar > QR Kod** aracına yapıştırarak afiş veya broşürleriniz için QR kod üretebilirsiniz.
+
+### Seçenek B: GitHub Pages ile Yayınlama
+1. GitHub reponuzda **Settings > Pages** sekmesine gidin.
+2. Source olarak **GitHub Actions** seçin ve Vite şablonunu etkinleştirin.
+3. Dağıtım tamamlandığında `https://kullaniciadi.github.io/repo-adi/` adresinden yayınlanacaktır.
 
 ---
 
